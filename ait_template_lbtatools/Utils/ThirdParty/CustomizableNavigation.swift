@@ -78,7 +78,10 @@ public extension CustomizableNavigation where Self: UIViewController, Self: UIGe
 
             if let navBarSize = navigationBar?.frame.size {
                 let statusBarSize = statusBarHeight
-                barView?.frame.size = CGSize(width: navBarSize.width, height: navBarSize.height + statusBarSize)
+                barView?.frame.size = CGSize(
+                    width: navBarSize.width,
+                    height: navBarSize.height + statusBarSize
+                )
             }
 
             navigationBar?.subviews.first?.insertSubview(barView!, at: 0)
@@ -112,13 +115,17 @@ public extension CustomizableNavigation where Self: UIViewController, Self: UIGe
             titleView.heightAnchor.constraint(equalToConstant: navBar.bounds.height).isActive = true
         }
 
-
         barView?.backgroundColor = barBackgroundColor
 
         navigationItem.leftBarButtonItems = []
 
         if let backImage = backImage {
-            let imageButtonFrame = CGRect(x: 0, y: 0, width: backImage.size.width + 20, height: backImage.size.height + 100)
+            let imageButtonFrame = CGRect(
+                x: 0,
+                y: 0,
+                width: backImage.size.width + 20,
+                height: backImage.size.height + 100
+            )
             let imageButton = UIButton(frame: imageButtonFrame)
             imageButton.contentEdgeInsets = backInset ?? .zero
             imageButton.setImage(backImage, for: .normal)
@@ -174,4 +181,3 @@ extension UIViewController {
         }
     }
 }
-

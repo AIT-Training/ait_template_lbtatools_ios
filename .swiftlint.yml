@@ -1,0 +1,63 @@
+disabled_rules: # rule identifiers to exclude from running
+  - colon
+  - comma
+  - control_statement
+  - force_cast
+  - unused_optional_binding
+  - no_space_in_method_call
+  - cyclomatic_complexity
+opt_in_rules: # some rules are only opt-in
+  - empty_count
+  # Find all the available rules by running:
+  # swiftlint rules
+included: # paths to include during linting. `--path` is ignored if present.
+  - ait_template_lbtatools
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - ait_template_lbtatools/Constants/Localized.swift
+  - ait_template_lbtatools/Constants/Images.swift
+  - ait_template_lbtatools/ThirdParty
+
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+force_cast: warning # implicitly
+force_try:
+  severity: warning # explicitly
+# rules that have both warning and error levels, can set just the warning level
+# implicitly
+line_length: 110
+# they can set both implicitly with an array
+type_body_length:
+  - 300 # warning
+  - 400 # error
+# or they can set both explicitly
+function_body_length:
+    - 100 # warning
+    - 500 # error
+file_length:
+  warning: 1000
+  error: 1200
+# naming rules can set warnings/errors for min_length and max_length
+# additionally they can set excluded names
+type_name:
+  min_length: 4 # only warning
+  max_length: # warning and error
+    warning: 70
+    error: 80
+  excluded:
+    - iPhone # excluded via string
+    - Log
+    - Tag
+identifier_name:
+  min_length: # only min_length
+    error: 2 # only error
+  max_length:
+    warning: 60
+    error: 100
+  excluded: # excluded via string array
+    - id
+    - at
+    - vc
+    - to
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji)
+

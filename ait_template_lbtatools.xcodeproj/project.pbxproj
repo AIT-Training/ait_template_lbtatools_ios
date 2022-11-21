@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9543D875292BD3840036998F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9543D873292BD3840036998F /* Localizable.strings */; };
 		954B8766292BC5A3005F2ACB /* LBTATools in Frameworks */ = {isa = PBXBuildFile; productRef = 954B8765292BC5A3005F2ACB /* LBTATools */; };
 		954B876B292BC624005F2ACB /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954B876A292BC624005F2ACB /* UIView+Layout.swift */; };
 		954B876F292BC660005F2ACB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954B876E292BC660005F2ACB /* BaseViewController.swift */; };
@@ -15,6 +16,7 @@
 		95ECB923292BCCAE00B59E0A /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ECB922292BCCAE00B59E0A /* BaseScrollView.swift */; };
 		95ECB926292BCCFC00B59E0A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 95ECB925292BCCFC00B59E0A /* SnapKit */; };
 		95ECB92C292BCDF200B59E0A /* ViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ECB92B292BCDF200B59E0A /* ViewLayout.swift */; };
+		95ECB937292BCFD900B59E0A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95ECB935292BCFD900B59E0A /* Localizable.strings */; };
 		95F252D5292B152900F61EFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F252D4292B152900F61EFD /* AppDelegate.swift */; };
 		95F252D9292B152900F61EFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F252D8292B152900F61EFD /* ViewController.swift */; };
 		95F252DE292B152D00F61EFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F252DD292B152D00F61EFD /* Assets.xcassets */; };
@@ -22,12 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9543D874292BD3840036998F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		954B876A292BC624005F2ACB /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		954B876E292BC660005F2ACB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		95ECB91C292BCC5B00B59E0A /* CustomizableNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizableNavigation.swift; sourceTree = "<group>"; };
 		95ECB920292BCC8700B59E0A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		95ECB922292BCCAE00B59E0A /* BaseScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScrollView.swift; sourceTree = "<group>"; };
 		95ECB92B292BCDF200B59E0A /* ViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLayout.swift; sourceTree = "<group>"; };
+		95ECB936292BCFD900B59E0A /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = Localizable.strings; sourceTree = "<group>"; };
 		95F252D1292B152900F61EFD /* ait_template_lbtatools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ait_template_lbtatools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F252D4292B152900F61EFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95F252D8292B152900F61EFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +154,38 @@
 			path = Layout;
 			sourceTree = "<group>";
 		};
+		95ECB92E292BCF7B00B59E0A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		95ECB92F292BCF9B00B59E0A /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				95ECB931292BCFA900B59E0A /* id.lproj */,
+				95ECB930292BCFA100B59E0A /* en.lproj */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		95ECB930292BCFA100B59E0A /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				9543D873292BD3840036998F /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		95ECB931292BCFA900B59E0A /* id.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				95ECB935292BCFD900B59E0A /* Localizable.strings */,
+			);
+			path = id.lproj;
+			sourceTree = "<group>";
+		};
 		95F252C8292B152900F61EFD = {
 			isa = PBXGroup;
 			children = (
@@ -170,7 +206,9 @@
 			isa = PBXGroup;
 			children = (
 				95ECB927292BCD5400B59E0A /* Assets */,
+				95ECB92E292BCF7B00B59E0A /* Constants */,
 				954B876C292BC64A005F2ACB /* Controllers */,
+				95ECB92F292BCF9B00B59E0A /* Localizable */,
 				95ECB928292BCD5E00B59E0A /* Others */,
 				95ECB929292BCD6700B59E0A /* Storyboards */,
 				954B8767292BC5D1005F2ACB /* Utils */,
@@ -186,6 +224,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95F252E5292B152D00F61EFD /* Build configuration list for PBXNativeTarget "ait_template_lbtatools" */;
 			buildPhases = (
+				95ECB92D292BCF5700B59E0A /* SwiftGen */,
+				9543D876292BD3E90036998F /* Swiftlint */,
 				95F252CD292B152900F61EFD /* Sources */,
 				95F252CE292B152900F61EFD /* Frameworks */,
 				95F252CF292B152900F61EFD /* Resources */,
@@ -225,6 +265,7 @@
 			knownRegions = (
 				en,
 				Base,
+				id,
 			);
 			mainGroup = 95F252C8292B152900F61EFD;
 			packageReferences = (
@@ -246,11 +287,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				95F252E1292B152D00F61EFD /* LaunchScreen.storyboard in Resources */,
+				9543D875292BD3840036998F /* Localizable.strings in Resources */,
+				95ECB937292BCFD900B59E0A /* Localizable.strings in Resources */,
 				95F252DE292B152D00F61EFD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9543D876292BD3E90036998F /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if command -v tools/swiftlint-0.39.2/swiftlint >/dev/null; then\ntools/swiftlint-0.39.2/swiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		95ECB92D292BCF5700B59E0A /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PROJECT_DIR/tools/swiftgen-6.1.0/bin/swiftgen xcassets -t swift4 \"$PROJECT_DIR/$PROJECT_NAME/Assets/Assets.xcassets\" --output \"$PROJECT_DIR/$PROJECT_NAME/Constants/Images.swift\"\n$PROJECT_DIR/tools/swiftgen-6.1.0/bin/swiftgen strings -t structured-swift4-localizable \"$PROJECT_DIR/$PROJECT_NAME/Localizable/id.lproj/Localizable.strings\" --output \"$PROJECT_DIR/$PROJECT_NAME/Constants/Localized.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		95F252CD292B152900F61EFD /* Sources */ = {
@@ -271,6 +355,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		9543D873292BD3840036998F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9543D874292BD3840036998F /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		95ECB935292BCFD900B59E0A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95ECB936292BCFD900B59E0A /* id */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		95F252DF292B152D00F61EFD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

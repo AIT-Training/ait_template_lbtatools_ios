@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: BaseViewController {
     // MARK: - Properties
-    
+
     lazy var welcomeLabel: UILabel = {
         let view = UILabel()
         view.text = "Welcome to Template Project"
@@ -21,7 +21,7 @@ class ViewController: BaseViewController {
 
         return view
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

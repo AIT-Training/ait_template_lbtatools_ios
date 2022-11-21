@@ -12,13 +12,14 @@ private typealias `Self` = AppDelegate
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Properties
-    
+
     var window: UIWindow?
 
     // MARK: - Life Cycles
 
     func application(
-        _ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         setupWindow()
 
