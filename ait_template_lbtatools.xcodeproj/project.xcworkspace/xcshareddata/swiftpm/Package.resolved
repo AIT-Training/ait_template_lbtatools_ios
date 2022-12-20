@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "aitbase",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PT-Akar-Inti-Teknologi/AITBase",
+      "state" : {
+        "revision" : "1e40ab0faedf780c868e2fe262ee5d6cf9a9c7fa",
+        "version" : "1.0.1"
+      }
+    },
+    {
       "identity" : "lbtatools",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bhlvoong/LBTATools",

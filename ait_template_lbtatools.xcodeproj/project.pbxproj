@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95014FFC2951C8840082CE47 /* AITBase in Frameworks */ = {isa = PBXBuildFile; productRef = 95014FFB2951C8840082CE47 /* AITBase */; };
 		9543D875292BD3840036998F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9543D873292BD3840036998F /* Localizable.strings */; };
 		954B8766292BC5A3005F2ACB /* LBTATools in Frameworks */ = {isa = PBXBuildFile; productRef = 954B8765292BC5A3005F2ACB /* LBTATools */; };
 		954B876B292BC624005F2ACB /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954B876A292BC624005F2ACB /* UIView+Layout.swift */; };
 		954B876F292BC660005F2ACB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954B876E292BC660005F2ACB /* BaseViewController.swift */; };
 		95ECB91D292BCC5B00B59E0A /* CustomizableNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ECB91C292BCC5B00B59E0A /* CustomizableNavigation.swift */; };
-		95ECB921292BCC8700B59E0A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ECB920292BCC8700B59E0A /* BaseView.swift */; };
-		95ECB923292BCCAE00B59E0A /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ECB922292BCCAE00B59E0A /* BaseScrollView.swift */; };
 		95ECB926292BCCFC00B59E0A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 95ECB925292BCCFC00B59E0A /* SnapKit */; };
 		95ECB92C292BCDF200B59E0A /* ViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ECB92B292BCDF200B59E0A /* ViewLayout.swift */; };
 		95ECB937292BCFD900B59E0A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95ECB935292BCFD900B59E0A /* Localizable.strings */; };
@@ -28,8 +27,6 @@
 		954B876A292BC624005F2ACB /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		954B876E292BC660005F2ACB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		95ECB91C292BCC5B00B59E0A /* CustomizableNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizableNavigation.swift; sourceTree = "<group>"; };
-		95ECB920292BCC8700B59E0A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
-		95ECB922292BCCAE00B59E0A /* BaseScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScrollView.swift; sourceTree = "<group>"; };
 		95ECB92B292BCDF200B59E0A /* ViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLayout.swift; sourceTree = "<group>"; };
 		95ECB936292BCFD900B59E0A /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = Localizable.strings; sourceTree = "<group>"; };
 		95F252D1292B152900F61EFD /* ait_template_lbtatools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ait_template_lbtatools.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95014FFC2951C8840082CE47 /* AITBase in Frameworks */,
 				954B8766292BC5A3005F2ACB /* LBTATools in Frameworks */,
 				95ECB926292BCCFC00B59E0A /* SnapKit in Frameworks */,
 			);
@@ -107,18 +105,8 @@
 		95ECB91E292BCC7300B59E0A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				95ECB91F292BCC7B00B59E0A /* Base */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		95ECB91F292BCC7B00B59E0A /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				95ECB920292BCC8700B59E0A /* BaseView.swift */,
-				95ECB922292BCCAE00B59E0A /* BaseScrollView.swift */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		95ECB927292BCD5400B59E0A /* Assets */ = {
@@ -238,6 +226,7 @@
 			packageProductDependencies = (
 				954B8765292BC5A3005F2ACB /* LBTATools */,
 				95ECB925292BCCFC00B59E0A /* SnapKit */,
+				95014FFB2951C8840082CE47 /* AITBase */,
 			);
 			productName = ait_template_lbtatools;
 			productReference = 95F252D1292B152900F61EFD /* ait_template_lbtatools.app */;
@@ -271,6 +260,7 @@
 			packageReferences = (
 				954B8764292BC5A3005F2ACB /* XCRemoteSwiftPackageReference "LBTATools" */,
 				95ECB924292BCCFC00B59E0A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				95014FFA2951C8840082CE47 /* XCRemoteSwiftPackageReference "AITBase" */,
 			);
 			productRefGroup = 95F252D2292B152900F61EFD /* Products */;
 			projectDirPath = "";
@@ -341,12 +331,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95ECB923292BCCAE00B59E0A /* BaseScrollView.swift in Sources */,
 				95F252D9292B152900F61EFD /* ViewController.swift in Sources */,
 				954B876F292BC660005F2ACB /* BaseViewController.swift in Sources */,
 				95F252D5292B152900F61EFD /* AppDelegate.swift in Sources */,
 				95ECB92C292BCDF200B59E0A /* ViewLayout.swift in Sources */,
-				95ECB921292BCC8700B59E0A /* BaseView.swift in Sources */,
 				954B876B292BC624005F2ACB /* UIView+Layout.swift in Sources */,
 				95ECB91D292BCC5B00B59E0A /* CustomizableNavigation.swift in Sources */,
 			);
@@ -574,6 +562,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		95014FFA2951C8840082CE47 /* XCRemoteSwiftPackageReference "AITBase" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PT-Akar-Inti-Teknologi/AITBase";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		954B8764292BC5A3005F2ACB /* XCRemoteSwiftPackageReference "LBTATools" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bhlvoong/LBTATools";
@@ -593,6 +589,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		95014FFB2951C8840082CE47 /* AITBase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95014FFA2951C8840082CE47 /* XCRemoteSwiftPackageReference "AITBase" */;
+			productName = AITBase;
+		};
 		954B8765292BC5A3005F2ACB /* LBTATools */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 954B8764292BC5A3005F2ACB /* XCRemoteSwiftPackageReference "LBTATools" */;
